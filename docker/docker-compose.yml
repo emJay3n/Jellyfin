@@ -1,0 +1,12 @@
+name: "jellyfin"
+
+services:
+    jellyfin:
+        image: linuxserver/jellyfin:10.10.7
+        container_name: jellyfin
+        ports:
+            - "8096:8096"
+        volumes:
+            - ../jellyfin/config:/config
+            # Paths to media directories mapped to directories of increasing numbers
+            - /Users/emjay3n/Movies/:/media/0/

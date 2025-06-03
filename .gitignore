@@ -1,0 +1,4 @@
+/jellyfin/*
+!/jellyfin/.gitkeep
+
+.DS_Store
